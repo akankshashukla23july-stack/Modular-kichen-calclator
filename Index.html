@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modular Kitchen Calculator | Align Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Modular Kitchen Cost Calculator</h2>
+
+  <label>Lower Cabinet (RFT)</label>
+  <input type="number" id="lower" placeholder="Enter RFT">
+
+  <label>Upper Cabinet (RFT)</label>
+  <input type="number" id="upper" placeholder="Enter RFT">
+
+  <label>Shutter Finish</label>
+  <select id="shutter">
+    <option value="1000">Laminate</option>
+    <option value="2200">Acrylic</option>
+    <option value="3000">PU Finish</option>
+  </select>
+
+  <label>Hardware</label>
+  <select id="hardware">
+    <option value="8000">Normal</option>
+    <option value="12000">Soft Close</option>
+  </select>
+
+  <label>Countertop</label>
+  <select id="counter">
+    <option value="9000">Granite</option>
+    <option value="16000">Quartz</option>
+  </select>
+
+  <button onclick="calculate()">Calculate Cost</button>
+
+  <h3 id="result"></h3>
+  <p class="note">*Final cost may vary as per site condition</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
